@@ -14,6 +14,7 @@ This API provides functionality for user registration and login using Firebase A
 **SEARCH** `http://localhost:2000/data?keyword=kebun&sortrating`
 **SEARCH** `http://localhost:2000/data?Category=Taman Hiburan`
 **SEARCH** `http://localhost:2000/data?category=Tempat Ibadah&sort=rating`
+**GET** `GET http://localhost:2000/flights`
 
 ### Request Body
 
