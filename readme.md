@@ -1,21 +1,30 @@
-untuk masukin data register********************************
+# Firebase Authentication API
+
+## Overview
+
+This API provides functionality for user registration and login using Firebase Authentication. It interacts with Firebase Realtime Database to store user information.
+
+## 1. User Registration
+
+### Endpoint
+
+**POST** `http://localhost:2000/api/auth/register`
+**GET** `http://localhost:2000/data?page=1&size=2`
+**SEARCH** `http://localhost:2000/data?page=1&size=2`
+**SEARCH** `http://localhost:2000/data?keyword=kebun&sortrating`
+**SEARCH** `http://localhost:2000/data?Category=Taman Hiburan`
+**SEARCH** `http://localhost:2000/data?category=Tempat Ibadah&sort=rating`
+
+### Request Body
+
+The request body must be a JSON object with the following fields:
+
+````json
 {
-  "username": "John Doe",
-  "email": "john@example.com",
+  "username": "Wizzmate",
+  "email": "Wizzmate@example.com",
   "password": "password123"
 }
-
-untuk masukin data login
-{
-  "message": "User berhasil didaftarkan",
-  "user": "USER_UID"
-}
-
-link
-http://localhost:3000/api/auth/register
-
-
-untuk memasukkan dataset************************************
 
 {
     "page": 1,
@@ -29,5 +38,33 @@ untuk memasukkan dataset************************************
     ]
 }
 
-link
-http://localhost:3000/data?page=1&size=2
+## Features
+1. **User Authentication**: Register and log in users via Firebase Authentication.
+2. **Data Retrieval**: Get data with pagination.
+3. **Error Handling**: Custom error handling middleware to catch any server-side errors.
+
+## Table of Contents
+1. [Setup](#setup)
+2. [API Endpoints](#api-endpoints)
+   - [POST /api/auth/register](#post-apiauthregister)
+   - [POST /api/auth/login](#post-apiauthlogin)
+   - [GET /data](#get-datadata)
+3. [Running the Server](#running-the-server)
+4. [Error Handling](#error-handling)
+5. [File Structure](#file-structure)
+6. [License](#license)
+
+---
+
+## 1. Setup
+
+### Prerequisites
+Before you begin, ensure you have the following installed on your machine:
+- [Node.js](https://nodejs.org/en/) (version 14 or higher)
+- [Firebase Account](https://firebase.google.com/) to use Firebase Authentication.
+
+### Installation
+1. Clone this repository:
+   ```bash
+   git clone https://github.com/your-username/express-api.git
+````
